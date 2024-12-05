@@ -1,12 +1,25 @@
 {
   "expo": {
-    "name": "health-brightness",
-    "slug": "health-brightness",
+    "name": "Brightly",
+    "slug": "brightly",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "plugins": [
+      "expo-health-connect",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 26
+          }
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -19,7 +32,11 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "dev.shuchir.brightly",
+      "permissions": [
+        "android.permission.health.READ_STEPS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
