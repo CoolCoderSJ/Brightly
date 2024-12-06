@@ -1,6 +1,6 @@
 # Brightly
 
-Another Soren Iverson recreation.
+Another Soren Iverson recreation based on: https://www.instagram.com/p/DDKu9XFSZB3/
 
 This app adjusts the system brightness based on the number of steps taken by the user. It uses the Health Connect API to read step data and adjusts the brightness accordingly.
 
